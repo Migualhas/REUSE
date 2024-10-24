@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Administração</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Adicione seu CSS se necessário -->
+</head>
+<body>
+    <header>
+        <h1>Painel de Administração</h1>
+        <nav>
+            <ul>
+                <li><a href="/cadastroPC.html">Cadastro de PCs</a></li>
+                <li><a href="/ganhadores.html">Sorteio</a></li>
+                <li><a href="/logout">Sair</a></li> <!-- Link para logout -->
+            </ul>
+        </nav>
+    </header>
+    <main> 
+                
+            <h2>Exportar Dados</h2>
+            <button onclick="window.location.href='/export/ganhadores'">Download de Todos os Ganhadores</button>
+            <br>
+            <h3>Inscritos</h3>
+            <input type="text" id="itemId" placeholder="ID do Item">
+            <button onclick="exportInscritos()">Download de Inscritos por Item</button>
+            <br>
+            <button onclick="window.location.href='/export/all-inscricoes'">Download de Todos os Inscritos</button>
+            <br>
+            <button onclick="window.location.href='/export/all-tables'">Download de Todo o Banco de Dados</button>
+
+    </main>
+    <script>
+        function exportInscritos() {
+            const itemId = document.getElementById('itemId').value;
+            if (itemId) {
+                window.location.href = `/export/inscritos/${itemId}`;
+            } else {
+                alert('Por favor, insira o ID do item.');
+            }
+        }
+    </script>
+</body>
+
+</html>

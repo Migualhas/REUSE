@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ganhadores.css">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Vencedores do Sorteio</title>
+</head>
+<body>
+    <header>
+       
+        <h1 class="text">VENCEDORES DO SORTEIO</h1>
+    </header>
+
+    <main>
+        <section id="itens">
+            <h2>Selecione um Item para Sortear</h2>
+            <div id="itemsContainer">
+                <!-- Os blocos de itens serão gerados aqui via JavaScript -->
+            </div>
+            <button id="sortearButton">Sortear</button>
+            <div id="resultado"></div>
+        </section>
+
+        <div id="ganhadorModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); color:white; text-align:center; padding-top:20%;">
+            <h2 id="ganhadorMensagem"></h2>
+        </div>
+        
+
+        <section id="ganhadores">
+            <h2>Lista de Vencedores</h2>
+            <ul id="ganhadoresContainer">
+                <!-- Os ganhadores serão adicionados aqui -->
+            </ul>
+            <table id="winnersTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Matrícula</th>
+                        <th>Aiu ou Bzl</th>
+                        <th>Patrimônio</th>
+                        <th>Modelo</th> <!-- Coluna para o modelo -->
+                        <th>Data do Sorteio</th>     <!-- Nova coluna para data do sorteio -->
+                        <th>Horário do Sorteio</th>  <!-- Nova coluna para horário do sorteio -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7" class="no-winners">Nenhum vencedor encontrado.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+        </section>
+    </main>
+
+    <script src="ganhadores.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Cadastro de Notebooks e Desktops</title>
+    <link rel="stylesheet" href="cadastroPC.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Notebooks e Desktops</h1>
+        <form id="cadastroForm" method="post">
+            <label for="patrimonio">Patrimônio:</label>
+            <input type="number" id="patrimonio" name="patrimonio" required>
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" step="0.01" required>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="Notebook">Notebook</option>
+                <option value="Desktop">Desktop</option>
+            </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p id="resultado"></p>
+    </div>
+    <div class="container">
+        <h1>Upload de Arquivo Excel</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="file" name="file" accept=".xlsx, .xls" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <h1>upload-excepcionais</h1>
+    <form action="http://localhost:3000/upload-excepcionais" method="POST" enctype="multipart/form-data">
+        <label for="file">Selecione o arquivo Excel:</label>
+        <input type="file" id="file" name="file" accept=".xlsx, .xls" required>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div class="uploadimg">
+        <h1>Upload de Imagem</h1>
+        <form id="imageUploadForm">
+            <label for="imageFile">Escolha uma imagem:</label>
+            <input type="file" id="imageFile" name="imageFile" accept="image/*" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="uploadMessage"></div> <!-- Div para exibir a mensagem -->
+      </div>
+    <script src="cadatros.js"></script>
+</body>
+</html>
