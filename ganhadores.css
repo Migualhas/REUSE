@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('coolvetica/coolvetica\ rg.otf');
+}
+#logo {
+    cursor: pointer; /* Muda o cursor para uma mãozinha quando passa sobre o elemento */
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+#winnersTable {
+    margin: 50px auto; /* Centraliza a tabela horizontalmente e adiciona espaço acima e abaixo */
+    max-width: 800px; /* Define uma largura máxima para a tabela */
+    
+}
+
+
+:root{
+    --primary-pink: #E62AA2;
+    --primary-blue: #0085FB;
+    --primary-green: #03B337;
+    --background: #FFFFFF;
+    --black: #666666;
+    font-family: Bebas Neue;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+.text{
+    color: #E62AA2;
+    text-align: center;
+    font-family: Bebas Neue;
+}
+h2{
+    color: #0085FB;
+    text-align: center;
+    font-family: 'Coolvetica';
+}
+#ganhadorMensagem{
+    color:  #E62AA2;
+    font-size: larger;
+    text-align: center;
+    font-family: 'Coolvetica';
+}
+#winners {
+    font-family: 'Coolvetica';
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 0.75em;
+    text-align: left;
+}
+th {
+    
+    color:  #03B337;
+}
+.no-winners {
+    text-align: center;
+    font-style: italic;
+}
+
+
+.container {
+    text-align: center;
+    background-color: white;
+    color: #666666;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#sort{
+    font-size: 20px;
+}
+button {
+    display: block; margin: 0 auto;
+    font-size: 18px;
+    font-family: Bebas Neue;
+    background-color: var(--primary-pink);
+    border: none;
+    border-radius: 12px;
+    color: var(--background);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    text-align:center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+}
+
+/* Adicionando estilo para os blocos de seleção de itens */
+#itemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.item-block {
+    width: 200px;
+    padding: 1em;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.item-block:hover {
+    background-color: #eaeaea;
+    transform: scale(1.05);
+}
+
+.item-block.selected {
+    background-color: var(--primary-pink);
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos para a tabela de ganhadores por item */
+.winners-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.winners-table th, .winners-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.winners-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.winners-table td {
+    background-color: #fff;
+}
+
+/* Bloco de seleção de itens */
+#itemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.item-block {
+    width: 200px;
+    padding: 1em;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.item-block:hover {
+    background-color: #eaeaea;
+    transform: scale(1.05);
+}
+
+.item-block.selected {
+    background-color: var(--primary-pink);
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos para cada seção de ganhadores por item */
+.item-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.item-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+

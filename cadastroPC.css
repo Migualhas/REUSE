@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Coolvetica";
+  src: url("coolvetica/coolvetica\ rg.otf");
+}
+#logo {
+  cursor: pointer; /* Muda o cursor para uma mãozinha quando passa sobre o elemento */
+}
+:root {
+  --primary-pink: #e62aa2;
+  --primary-blue: #0085fb;
+  --primary-green: #03b337;
+  --background: #ffffff;
+  --black: #666666;
+  font-family: Bebas Neue;
+}
+
+body {
+  font-family: Bebas Neue;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #e62aa2;
+}
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color: #666666;
+}
+
+label {
+  margin-top: 10px;
+  text-align: left;
+}
+
+input,
+textarea,
+select {
+  margin-top: 5px;
+  padding: 8px;
+  color: #666666;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #03b337;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0085fb;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #03b337;
+}
+.uploadimg {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#uploadMessage {
+  margin-top: 10px;
+  color: green;
+  display: none; /* Esconde a mensagem inicialmente */
+}
